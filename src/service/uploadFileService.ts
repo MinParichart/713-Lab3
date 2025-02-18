@@ -6,6 +6,7 @@ export async function uploadFile(
   filePath: string,
   file: Express.Multer.File
 ): Promise<void> {
+  
   const params = {
     Bucket: bucket,
     Key: filePath,
